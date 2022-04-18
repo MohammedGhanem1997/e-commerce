@@ -60,7 +60,7 @@ class CheckoutController extends Controller
         $paymentRequestData = [
             'order_id' => $order->order_label,
             'order_desc' => 'order #' . $order->order_label . '. Test Cart Number: 4444555511116666',
-            'currency' => 'EGP',
+            'currency' => 'USD',
             'amount' => $subtotal * 100,
             'response_url' => url('checkout/success') . '?_token=' . csrf_token()
         ];
